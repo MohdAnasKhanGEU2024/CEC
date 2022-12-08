@@ -1,1 +1,39 @@
+/*
+Mohammad Anas Khan
+Btech CST (ML & AI)
+CST SPL 1
+20
+*/
 
+
+
+#include<iostream>
+#define max 100
+using namespace std;
+int LinearSearch(int arr[],int n,int key)
+{
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]==key)
+        {
+            return i;
+        }
+        else 
+            return -1; 
+    }
+    return 1;
+}
+
+int main()
+{
+    int arr[max],i,key,n;
+    cout<<"Enter Number of Elements :";
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    cout<<"Enter Key value :";
+    cin>>key;
+    cout<<"Found At Index :"<<LinearSearch(arr,n,key);
+}
