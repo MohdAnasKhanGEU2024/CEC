@@ -20,8 +20,6 @@ int partition(int arr[], int low, int high)
 
 	for (int j = low; j <= high - 1; j++)
 	{
-		// If current element is smaller
-		// than or equal to pivot
 		if (arr[j] <= pivot) {
 
 			// increment index of
@@ -34,16 +32,11 @@ int partition(int arr[], int low, int high)
 	return (i + 1);
 }
 
-// Generates Random Pivot, swaps pivot with
-// end element and calls the partition function
 int partition_r(int arr[], int low, int high)
 {
-	// Generate a random number in between
-	// low .. high
 	srand(time(NULL));
 	int random = low + rand() % (high - low);
 
-	// Swap A[random] with A[high]
 	swap(arr[random], arr[high]);
 
 	return partition(arr, low, high);
@@ -55,8 +48,6 @@ void quickSort(int arr[], int low, int high)
 
 		int pi = partition_r(arr, low, high);
 
-		// Separately sort elements before
-		// partition and after partition
 		quickSort(arr, low, pi - 1);
 		quickSort(arr, pi + 1, high);
 	}
