@@ -1,4 +1,12 @@
-public class MergeSort
+/*
+Name - Mohammad Anas Khan
+Section - CST SPL1
+Branch - Btech CST (ML & AI)
+Roll No. - 2017514(20)
+*/
+
+
+*/public class MergeSort
 {
     public static void conquer(int arr[], int si, int mid, int ei)
     {
