@@ -16,14 +16,16 @@ x=*b;
 }
 void main ()
 {
-int a[10],i,j,flag;
+int a[10],i,j,flag,n = 0;
+printf("Enter number of elements :");
+scanf("%d",n);
 printf("enter the unsorted elements\n");
-for(i=0;i<5;i++)
+for(i=0;i<n;i++)
 scanf("%d",&a[i]);
-for(i=0;i<5;i++)
+for(i=0;i<n;i++)
 {
     flag=0;
-for(j=0;j<4-i;j++)
+for(j=0;j<n-1-i;j++)
 {
     if(a[j]>a[j+1])
     {
