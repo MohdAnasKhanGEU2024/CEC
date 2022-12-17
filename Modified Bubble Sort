@@ -18,7 +18,7 @@ void main ()
 {
 int a[10],i,j,flag,n = 0;
 printf("Enter number of elements :");
-scanf("%d",n);
+scanf("%d",&n);
 printf("enter the unsorted elements\n");
 for(i=0;i<n;i++)
 scanf("%d",&a[i]);
@@ -39,3 +39,4 @@ if(flag==0)
 printf("sorted elements are\n");
 for(i=0;i<5;i++)
 printf("%d\n",a[i]);
+}
